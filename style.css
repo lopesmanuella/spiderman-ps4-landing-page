@@ -1,0 +1,129 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000, #1a1a1a);
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* header */
+header {
+    padding: 80px 20px;
+    background: #111;
+}
+header h1 {
+    font-size: 60px;
+    color: #f00;
+    margin-bottom: 15px;
+}
+header p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+header button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #f00;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+header button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+/* imagem */
+.imagem img {
+    width: 90%;
+    max-width: 700px;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* sobre o jogo */
+.game, .game-features, .trailer {
+    padding: 60px 20px;
+}
+.game h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.game p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* destaques */
+.game-features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.game-features ul {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+.game-features li {
+    font-size: 18px;
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+}
+.game-features li::before {
+    content: "✔";
+    color: #f00;
+    position: absolute;
+    left: 0;
+}
+
+/* trailer */
+.trailer h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.trailer iframe {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* fade animation */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* responsivo */
+@media(max-width: 768px) {
+    header h1 { font-size: 45px; }
+    header p { font-size: 16px; }
+    .game h2, .game-features h2, .trailer h2 { font-size: 28px; }
+    .game p, .game-features li { font-size: 16px; }
+    header button { font-size: 16px; padding: 10px 20px; }
+    .trailer iframe { height: 250px; }
+}
