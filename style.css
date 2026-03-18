@@ -6,16 +6,26 @@
 }
 
 /* body */
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000, #1a1a1a);
-    color: white;
+    color: rgb(32, 32, 32);
     text-align: center;
     line-height: 1.6;
+
+    margin: 0;
+
+    background-image: url("../spiderman-ps4-landing-page/fotos/spider2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* header (TELA INICIAL) */
-    header {
+header {
     height: 100vh;
     padding: 80px 20px;
 
@@ -31,14 +41,6 @@ body {
 
     position: relative;
 }
-
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-}
-
 
 /* overlay escuro */
 header::before {
