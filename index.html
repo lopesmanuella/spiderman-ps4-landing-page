@@ -23,34 +23,52 @@
 
             <div class="game-content">
                 <p>
-                Em Marvel Spider-Man você vive a história de Peter Parker,
-                enfrentando vilões enquanto protege Nova York.
-            </p>
+                    Em Marvel Spider-Man você vive a história de Peter Parker,
+                    enfrentando vilões enquanto protege Nova York.
+                </p>
 
-            <section class="info">
+                <section class="info">
+                    <article>
+                        <h3>🕹️ Gênero</h3>
+                        <p>Ação / Aventura</p>
+                    </article>
 
+                    <article>
+                        <h3>🏙️ Ambiente</h3>
+                        <p>Mundo aberto em Nova York</p>
+                    </article>
+
+                    <article>
+                        <h3>🎮 Plataforma</h3>
+                        <p>PlayStation</p>
+                    </article>
+                </section>
             </div>
+        </section>
 
-                <article>
-                    <h3>🕹️ Gênero</h3>
-                    <p>Ação / Aventura</p>
-                </article>
+        <section class="trailer" id="trailer">
+            <h2>Trailer</h2>
 
-                <article>
-                    <h3>🏙️ Ambiente</h3>
-                    <p>Mundo aberto em Nova York</p>
-                </article>
-
-                <article>
-                    <h3>🎮 Plataforma</h3>
-                    <p>PlayStation</p>
-                </article>
-
-            </section>
-
+            <iframe 
+                width="100%" 
+                height="450"
+                src="https://www.youtube.com/embed/1E051WtpyWg"
+                title="Spider-Man Trailer"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </section>
 
     </main>
+
+    <script>
+        function scrollToTrailer() {
+            document.getElementById("trailer").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
 
 </body>
 </html>

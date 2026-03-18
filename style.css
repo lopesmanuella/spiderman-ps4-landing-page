@@ -208,3 +208,8 @@ header button {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+/* Trailer */
+.trailer a {
+    display: inline-block;
+}
