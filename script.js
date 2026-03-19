@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function scrollToTrailer() {
     document.getElementById("trailer").scrollIntoView({ behavior: "smooth" });
 }
@@ -13,3 +14,12 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+=======
+<script>
+function scrollToTrailer() {
+    document.getElementById("trailer").scrollIntoView({
+        behavior: "smooth"
+    })
+}
+</script>
+>>>>>>> 054ba77c9e65bee8120dc8784081f1a85e588ef6

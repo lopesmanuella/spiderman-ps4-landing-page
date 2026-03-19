@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,32 +8,72 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>Spider-Man</h1>
         <p>Seja o herói de Nova York</p>
         <button onclick="scrollToTrailer()">Ver Trailer</button>
-     </header>
-     <section class="imagem">
-        <img src="../spiderman-ps4-landing-page/fotos/spider2.png" alt="">
-     </section>
-     
-     <section class="game">
-        <h2>Sobre o Jogo</h2>
-        <p>
-            Em Marvel Spider-Man você vive a história de Peter Parker,
-            enfrentando vilões enquanto protege Nova York.
-        </p>
-     </section>
+    </header>
 
-     <section class="game-features fade">
-        <h2>Destaques do Jogo</h2>
-        <ul>
-            <li>Mundo aberto em Nova York</li>
-            <li>Movimentação com teias realistas</li>
-            <li>Combate rápido e dinâmico</li>
-            <li>História envolvente</li>
-            <li>Vilões icônicos da Marvel</li>
-        </ul>
-    </section>
+    <main>
+
+        <section class="game">
+            <header>
+                <h2>Sobre o Jogo</h2>
+            </header>
+
+            <div class="game-content">
+                <p>
+                    Em Marvel Spider-Man você vive a história de Peter Parker,
+                    enfrentando vilões enquanto protege Nova York.
+                </p>
+
+                <section class="info">
+                    <article>
+                        <h3>🕹️ Gênero</h3>
+                        <p>Ação / Aventura</p>
+                    </article>
+
+                    <article>
+                        <h3>🏙️ Ambiente</h3>
+                        <p>Mundo aberto em Nova York</p>
+                    </article>
+
+                    <article>
+                        <h3>🎮 Plataforma</h3>
+                        <p>PlayStation</p>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="trailer" id="trailer">
+            <h2>Trailer</h2>
+
+            <a href="https://www.youtube.com/watch?v=Pq02p3z3X2k" target="_blank">
+                <img 
+                    src="./fotos/spidertrailer.jpg" 
+                    alt="Assistir trailer do Spider-Man"
+                    width="70%">
+                
+                <p>▶ Assistir Trailer</p>
+            </a>
+        </section>
+
+    </main>
+
+    <script>
+        function scrollToTrailer() {
+            document.getElementById("trailer").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+<footer>
+    <p>© 2026 - Projeto Spider-Man</p>
+</footer>
+
 </body>
 </html>
+
